@@ -11,11 +11,26 @@ This chapter focuses on applying rudimentary knowledge of statistical models to 
     ```
 
 -   Install requirements:
+
     ```sh
     python3 -m pip install -r requirements.txt
     ```
 
-- Start Jupyter Notebook Server:
-  ```sh
-  jupyter notebook
-  ```
+-   Start Jupyter Notebook Server:
+    ```sh
+    jupyter notebook
+    ```
+
+### Techniques Explored
+
+-   SkLearn Data Pipelines and Transformations
+-   K-Fold Cross Validation
+-   Root Mean Squared Error (RMSE) model scoring
+-   Hyperparameter tuning
+-   Grid and Randomized Search
+
+### Models Used
+
+-   Linear Regressors
+-   Decision Tree Regressors
+-   Random Forest (Ensemble) Regressors
