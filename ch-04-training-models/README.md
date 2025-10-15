@@ -26,10 +26,10 @@ $$
 
 Where:
 
-- $\hat{y}:$ is the predicted y value.
-- $x_{i}:$ is the ith feature.
-- $\theta_{0}:$ is the bias/intercept term.
-- $\theta_{i}:$ is the ith model input weight.
+-   `ŷ` (y-hat): is the predicted y value
+-   `x_i`: is the ith feature
+-   `θ_0` (theta_0): is the bias/intercept term
+-   `θ_i` (theta_i): is the ith model parameter/weight
 
 We can represent this much more concisely in vectorized form:
 
@@ -38,14 +38,15 @@ $$
 $$
 
 Where:
-- h: is the hypothesis function.
-- $\theta$: is an n-dimensional vector of model weights, called the parameter vector.
-- $x$: is an n-dimensional vector of model features / inputs, called the feature vector.
+
+-   `h`: is the hypothesis function
+-   `θ` (theta): is an n-dimensional vector of model weights, called the parameter vector
+-   `x`: is an n-dimensional vector of model features/inputs, called the feature vector
 
 Common metrics for evaluating Regression models include:
 
-- Root Mean Squared Error
-- Mean Squared Error
+-   Root Mean Squared Error
+-   Mean Squared Error
 
 $$
 MSE(\textbf{X}, h_{\theta}) = \frac{1}{m} \sum_{i = 1}^{m} (\theta^{T} x^{(i)} - (y)^{(i)}) ^2
