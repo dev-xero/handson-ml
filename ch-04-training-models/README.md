@@ -25,6 +25,7 @@ $$
 $$
 
 Where:
+
 - $\hat{y}:$ is the predicted y value.
 - $x_{i}:$ is the ith feature.
 - $\theta_{0}:$ is the bias/intercept term.
