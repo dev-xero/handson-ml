@@ -73,3 +73,11 @@ Least absolute shrinkage and selection operator regression (LASSO) is another re
 $$
 J(\theta) = MSE(\theta) + 2 \alpha \sum_{i = 1}^{n} | \theta |
 $$
+
+### Elastic Net Regression
+
+This is a middle ground between ridge and lasso regression. It takes the weighted sums of both. `r` denotes the mix ratio, when `r = 0`, we have ridge regression, when `r = 1`, this is the equivalent to lasso regression. 
+
+Generally, it is best to avoid using plain Linear Regression. Some regularization is the way to go. R2 (Ridge) regression is usually a sensible default. But otherwise, when you suspect you have only a few useful features, you can go with Lasso or ElasticNet since they tend to zero out useless features.
+
+In terms of preference; Ridge > ElasticNet > Lasso > Plain LR. (simplified)
