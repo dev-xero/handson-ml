@@ -53,3 +53,23 @@ MSE(\textbf{X}, h_{\theta}) = \frac{1}{m} \sum_{i = 1}^{m} (\theta^{T} x^{(i)} -
 $$
 
 Here X represents the entire dataset matrix, while x is the ith row from that matrix.
+
+### Ridge Regression
+
+Ridge Regression or L2 Regularization is simply a regularized version of Linear Regression. This is done by adding a regularization term.
+
+$$
+J(\theta) = MSE(\theta) + \frac{\alpha}{m} \sum_{i = 1}^{n} \theta_{i}^{2}
+$$
+
+**Note:** The bias term is not regularized. Also note that it is important to scale the features before using any regularized models.
+
+The `l2` norm is also called the Euclidean norm, a measure of the vector's magnitude.
+
+### Lasso Regression
+
+Least absolute shrinkage and selection operator regression (LASSO) is another regularization model like R2, but instead uses the `l1` norm.
+
+$$
+J(\theta) = MSE(\theta) + 2 \alpha \sum_{i = 1}^{n} | \theta |
+$$
