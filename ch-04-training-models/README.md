@@ -81,3 +81,25 @@ This is a middle ground between ridge and lasso regression. It takes the weighte
 Generally, it is best to avoid using plain Linear Regression. Some regularization is the way to go. R2 (Ridge) regression is usually a sensible default. But otherwise, when you suspect you have only a few useful features, you can go with Lasso or ElasticNet since they tend to zero out useless features.
 
 In terms of preference; Ridge > ElasticNet > Lasso > Plain LR. (simplified)
+
+### Logistic Regression
+
+Much like Linear Regression, Logistic Regression computes a weighted sum of the input features (plus the bias term), but instead of outputting the result directly, we apply a "Sigmoid" function. The Sigmoid function outputs a number that falls within 0 and 1.
+
+$$
+\hat{p} = h_{\theta}(\textbf{x}) = \sigma(\theta^{T} \textbf{x})
+$$
+
+$$
+\sigma(t) = \frac{1}{1 + exp(-t)}
+$$
+
+NOTE: 
+
+$$
+logit(p) = log(\frac{p}{1 - p})
+$$
+
+The Logistic function is the inverse of the Logit.
+
+The cost function often used in Logistic Regression tasks is the "Log Loss".

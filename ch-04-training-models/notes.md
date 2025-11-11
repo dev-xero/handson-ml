@@ -7,3 +7,4 @@
 7. The most common metric for evaluating regression models is the RMSE (Root Mean Squared Error), which is basically the average of the difference between the predicted and true values squared. root( avg[(y - y_pred) ^ 2] ).
 8. ML algorithms generally optimize a different loss function during training simply because it's easier to do so. The loss functions used during training and evaluation may or may not always be the same.
 9. Ridge Regression - also known as L2 Regularization is used to correct for multi co-linearity.
+10. Logistic Regression predicts the probability that an instance belongs to a specific class. The positive class (1), is assigned whenever the model predicts a probability of (typically) greater than 50%, otherwise the instance is assigned the negative class (0). This forms the basis for Binary Classification.
